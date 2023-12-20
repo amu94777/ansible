@@ -1,0 +1,6 @@
+- name: ping remote server
+  host: web
+  become: yes
+  tasks:
+  - name: ping the remote server successfully
+    ansible.builtin.ping:
