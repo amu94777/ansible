@@ -4,6 +4,6 @@
 [cart]
 192.13.25.55
 
-[roboshop.children]
+[roboshop:children]
 web
 cart
