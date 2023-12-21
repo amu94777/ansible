@@ -1,0 +1,16 @@
+- name: variables declration in play-level and task-level
+  hosts: localhost
+  vars: 
+    NAME: "kumar"
+    COURSE-1: "AWS AND DEVOPS"
+  tasks:
+  - name: "Check this playbook wrther it takes variables from play-level or task-level"
+    vars:
+      TRAINER: "shiva"
+      COURSE: "web application"
+      DURATION: "3 months"
+      FEE: "30000"
+     ansible.builtin.debug:
+       msg: "hello jaya .i am taking {{COURSE-1}} course from {{NAME}} 
+             he is good tuitor.then i will take {{COURSE}} from {{TRAINER}} and the time limit of the course is {{DURATION}}
+             and the amount is {{FEE}}"
