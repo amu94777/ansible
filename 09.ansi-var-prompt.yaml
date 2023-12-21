@@ -10,5 +10,5 @@
   tasks:
   - name: checking wther it takes input from prompt
     ansible.builtin.debug:
-      msg: "my username is {{USERNAME}}"
-           "my password is {{PASSWORD}}"    
+      msg: "my username is {{USERNAME}},
+            my password is {{PASSWORD}}"    
