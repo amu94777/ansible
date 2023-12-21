@@ -1,0 +1,14 @@
+- name: Passing input from prompt ,asking user abt input.
+  hosts: localhost
+  vars_prompt:
+  - name: USERNAME
+    prompt: "enter your username"
+    private: false
+  - name: PASSWORD
+    prompt: "enter your password"
+    private: false
+  tasks:
+  - name: checking wther it takes input from prompt
+    ansible.builtin.debug:
+      msg: "my username is {{USERNAME}}"
+           "my password is {{PASSWORD}}"    
