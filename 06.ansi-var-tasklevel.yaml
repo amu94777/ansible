@@ -1,0 +1,17 @@
+- name: task level variables
+  hosts: localhost
+  tasks:
+  - name: defining and passing variables and values in tasklevel.
+    vars:
+      NAME: "jaya"
+      COURSE: "devops"
+      TRAINER: "shivakumar"
+      FEE: "20.000"
+      DURATION: "3MONTHS"
+    ansible.builtin.debug:
+      msg: "hello {{NAME}},i am learning {{COURSE}} from {{TRAINER}}.The time limit of the course is {{DURATION}}.The amount of the course is {{FEE}}"   
+
+
+
+
+      
