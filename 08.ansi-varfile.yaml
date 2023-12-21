@@ -1,5 +1,7 @@
 - name: refering variablefile to get variable values..
   hosts: localhost
+  vars_files:
+    variables.yaml
   tasks:
   - name: check variable values is taking from variable file or not.
     ansible.builtin.debug:
