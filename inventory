@@ -11,9 +11,3 @@
 web
 cart
 
-#[localhost]
-localhost
-
-#[localhost:vars]
-COURSE= "devops"
-NAME= "jaya"
