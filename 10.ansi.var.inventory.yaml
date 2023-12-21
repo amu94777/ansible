@@ -1,0 +1,6 @@
+- name: passing variable and their values from inventory
+  hosts: localhost
+  tasks:
+  - name: chk wther it takes the values from inventory or not
+    ansible.builtin.debug:
+      msg: "i am {{NAME}} and i am learning {{COURSE}}" 
