@@ -11,6 +11,4 @@
       DURATION: "3 months"
       FEE: "30,000"
      ansible.builtin.debug:
-       msg: "hello jaya .i am taking {{COURSE-1}} course from {{NAME}},
-             he is good tuitor.then i will take {{COURSE}} from {{TRAINER}} and the time limit of the course is {{DURATION}},
-             and the amount is {{FEE}}"
+       msg: "hello jaya .i am taking {{COURSE-1}} course from {{NAME}},he is good tuitor.then i will take {{COURSE}} from {{TRAINER}} and the time limit of the course is {{DURATION}},and the amount is {{FEE}}"
