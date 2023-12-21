@@ -1,0 +1,6 @@
+- name: ansible playbook for localhost
+  hosts: localhost
+  tasks:
+  - name: print something msg to localhost
+    ansible.builtin.debug:
+      msg: "hello localhost how r u and tq for cooprearting me always"
