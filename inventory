@@ -11,7 +11,7 @@
 web
 cart
 
-[localhost]
+#[localhost]
 localhost
 
 #[localhost:vars]
