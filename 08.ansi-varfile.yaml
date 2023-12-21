@@ -1,0 +1,7 @@
+- name: refering variablefile to get variable values..
+  hosts: localhost
+  tasks:
+  - name: check variable values is taking from variable file or not.
+    ansible.builtin.debug:
+      msg: "Hello jaya ,i am {{NAME}}.i have been teaching {{COURSE}} course.
+            amout is {{FEE}} and timelimit is {{DURATION}}""
