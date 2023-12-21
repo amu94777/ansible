@@ -1,0 +1,14 @@
+- name: send msg to local host and take replay from localhost
+  hosts: localhost
+  vars:
+    HOST: "localhost"
+    WISHES: "goodmorning"
+    SEVER: "ansible server"
+  tasks:
+  - name: print sending msg to localhost
+    ansible.builtin.debug:
+      msg: "hello {{HOST}} ,how r u ,{{WISHES}} tq for everthing."
+   
+  - name: print reply msg from localhost
+    ansible.builtin.debug:
+      msg: "tq {{SERVER}} for your gratitude.{{WISHES}}." 
